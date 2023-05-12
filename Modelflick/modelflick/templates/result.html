@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Results
+{% endblock %}
+
+{% block content %}
+<h1>Results</h1>
+{% for services in servicess %}
+<p>{{ services.Name }}</p>
+<p>{{ services.area_of_site }}</p>
+<p>{{ services.Your_dream_building }}</p>
+{% endfor %}
+<a href=" ">Download PDF</a>
+{% endblock %}
